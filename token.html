@@ -21,13 +21,30 @@
         background-repeat: no-repeat;
         background-position: center;
     }
+
+    .about{
+        width: 14%;
+        height: 5%;
+        /* border: solid; */
+        position: absolute;
+        left: 43%;
+        top: 8%;
+        cursor: pointer;
+    }
+
     </style>
 </head>
 
 </style>
 <body>
     <div class="background-container">
-
+        <div class="about"></div>
     </div>
+
+    <script>
+        document.querySelector(".about").addEventListener("click", function(){
+            window.location = "aboutus.html"
+        })
+    </script>
 </body>
 </html>
