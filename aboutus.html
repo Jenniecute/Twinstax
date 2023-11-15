@@ -27,16 +27,48 @@
         background-image: url("imgs/about.jpg");
         background-size: cover;
     }
+
+    .token {
+        width: 17%;
+        height: 6%;
+        /* border: solid; */
+        position: absolute;
+        left: 40%;
+        top: 9%;
+        cursor: pointer;
+    }
+
+    .rm {
+        width: 12%;
+        height: 6%;
+        /* border: solid; */
+        position: absolute;
+        left: 60%;
+        top: 9%;
+        cursor: pointer;
+    }
+
     </style>
 </head>
 
 </style>
 <body>
     <div class="background-container">
-
+        <div class="token"></div>
+        <div class="rm"></div>
     </div>
     <div class="background-container2">
 
     </div>
+
+    <script>
+        document.querySelector(".token").addEventListener("click", function(){
+            window.location = "token.html"
+        })
+
+        document.querySelector(".rm").addEventListener("click", function(){
+            window.open("token.html","_blank");
+        })
+    </script>
 </body>
 </html>
