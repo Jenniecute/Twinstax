@@ -18,13 +18,13 @@
 
         .background-container {
         min-height: 115vh;
-        background-image: url("imgs/wh.jpg");
+        background-image: url("imgs/backg1.jpg");
         background-size: cover;
     }
 
     .background-container2 {
         min-height: 115vh;
-        background-image: url("imgs/about.jpg");
+        background-image: url("imgs/backg2.jpg");
         background-size: cover;
     }
 
@@ -48,12 +48,23 @@
         cursor: pointer;
     }
 
+    .wp{
+        width: 16%;
+        height: 6%;
+        /* border: solid; */
+        position: absolute;
+        left: 20%;
+        top: 9%;
+        cursor: pointer;
+    }
+
     </style>
 </head>
 
 </style>
 <body>
     <div class="background-container">
+        <div class="wp"></div>
         <div class="token"></div>
         <div class="rm"></div>
     </div>
@@ -62,6 +73,10 @@
     </div>
 
     <script>
+        document.querySelector(".wp").addEventListener("click", function(){
+            window.open("wp.pdf","_blank");
+        })
+
         document.querySelector(".token").addEventListener("click", function(){
             window.location = "token.html"
         })
